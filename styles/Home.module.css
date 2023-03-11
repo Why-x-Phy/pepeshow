@@ -41,6 +41,7 @@
   justify-content: center;
   gap: 2%;
   margin-top: 28px;
+  margin-bottom: 28px;
   flex-wrap: wrap;
 }
 
