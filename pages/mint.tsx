@@ -46,7 +46,7 @@ const Mint: NextPage = () => {
         colorMode="dark"
         accentColor="#5204BF"
         contractAddress={nftDropContractAddress}
-        action={(contract) => contract.erc721.claim(quantity)}
+        action={(contract) => contract.erc721.claim(1)}
         onSuccess={() => {
           alert("NFT Claimed!");
           router.push("/stake");
