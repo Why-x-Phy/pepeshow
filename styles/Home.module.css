@@ -180,3 +180,14 @@
   max-height: 150px;
   border-radius: 15px;
 }
+
+.quantityControlButton {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 1px solid rgb(68, 67, 67);
+  color: #595858;
+}
