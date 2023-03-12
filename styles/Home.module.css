@@ -123,7 +123,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(46, 44, 44, 0.4);
   gap: 16px;
 }
 
