@@ -31,6 +31,8 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
           )}
           <h3>{nft.metadata.name}</h3>
           <Web3Button
+          colorMode="dark"
+          accentColor="#595858"
             action={(contract) => contract?.call("withdraw", [nft.metadata.id])}
             contractAddress={stakingContractAddress}
           >
