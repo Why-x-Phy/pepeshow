@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/stake`)}
+          onClick={() => router.push(``)}
         >
           {/* Staking an NFT */}
           <Image src="/icons/token.webp" alt="token" width={64} height={64} />
@@ -41,4 +41,5 @@ const Home: NextPage = () => {
   );
 };
 
+{/* onClick={() => router.push(`/stake`)}  */}
 export default Home;
