@@ -84,7 +84,7 @@ const Stake: NextPage = () => {
                 <b>
                   {!claimableRewards
                     ? "Loading..."
-                    : ethers.utils.formatUnits(claimableRewards, 2)}
+                    : ethers.utils.formatUnits(claimableRewards, 18)}
                 </b>{" "}
                 {tokenBalance?.symbol}
               </p>
@@ -92,7 +92,7 @@ const Stake: NextPage = () => {
             <div className={styles.tokenItem}>
               <h3 className={styles.tokenLabel}>Current Balance</h3>
               <p className={styles.tokenValue}>
-                <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
+                <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol, 2}
               </p>
             </div>
           </div>
