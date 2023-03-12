@@ -98,6 +98,8 @@ const Stake: NextPage = () => {
           </div>
 
           <Web3Button
+           colorMode="dark"
+           accentColor="#595858"
             action={(contract) => contract.call("claimRewards")}
             contractAddress={stakingContractAddress}
           >
@@ -127,6 +129,8 @@ const Stake: NextPage = () => {
                 />
                 <h3>{nft.metadata.name}</h3>
                 <Web3Button
+                 colorMode="dark"
+                 accentColor="#595858"
                   contractAddress={stakingContractAddress}
                   action={() => stakeNft(nft.metadata.id)}
                 >
