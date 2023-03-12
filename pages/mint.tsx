@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 
 const Mint: NextPage = () => {
   const router = useRouter();
+  const [quantity, setQuantity] = useState(1);
 
   return (
     <div className={styles.container}>
@@ -46,7 +47,7 @@ const Mint: NextPage = () => {
         colorMode="dark"
         accentColor="#5204BF"
         contractAddress={nftDropContractAddress}
-        action={(contract) => contract.erc721.claim(1)}
+        action={(contract) => contract.erc721.claim(quantity)}
         onSuccess={() => {
           alert("NFT Claimed!");
           router.push("/stake");
