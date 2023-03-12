@@ -46,7 +46,7 @@ const Mint: NextPage = () => {
 
       <Web3Button
         colorMode="dark"
-        accentColor="#5204BF"
+        accentColor="#595858"
         contractAddress={nftDropContractAddress}
         action={(contract) => contract.erc721.claim(quantity)}
         onSuccess={() => {
