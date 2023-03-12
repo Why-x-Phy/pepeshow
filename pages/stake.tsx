@@ -92,7 +92,7 @@ const Stake: NextPage = () => {
             <div className={styles.tokenItem}>
               <h3 className={styles.tokenLabel}>Current Balance</h3>
               <p className={styles.tokenValue}>
-                <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol, 2}
+                <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
               </p>
             </div>
           </div>
