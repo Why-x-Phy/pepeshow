@@ -17,11 +17,36 @@ const Mint: NextPage = () => {
       </p>
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
+
+
+
+      <div className={styles.quantityContainer}>
+                    <button
+                      className={`${styles.quantityControlButton}`}
+                      onClick={() => setQuantity(quantity - 1)}
+                      disabled={quantity <= 1}
+                    >
+                      -
+                    </button>
+
+                    <h4>{quantity}</h4>
+
+                    <button
+                      className={`${styles.quantityControlButton}`}
+                      onClick={() => setQuantity(quantity + 1)}
+                      disabled={quantity >= maxClaimable}
+                    >
+                      +
+                    </button>
+                  </div>
+
+                  
+
       <Web3Button
         colorMode="dark"
         accentColor="#5204BF"
         contractAddress={nftDropContractAddress}
-        action={(contract) => contract.erc721.claim(1)}
+        action={(contract) => contract.erc721.claim(quantity)}
         onSuccess={() => {
           alert("NFT Claimed!");
           router.push("/stake");
