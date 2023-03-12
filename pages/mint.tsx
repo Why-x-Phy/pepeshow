@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { nftDropContractAddress } from "../consts/contractAddresses";
 import styles from "../styles/Home.module.css";
+import { useMemo, useState } from "react";
 
 const Mint: NextPage = () => {
   const router = useRouter();
