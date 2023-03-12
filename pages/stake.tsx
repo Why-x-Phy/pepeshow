@@ -84,7 +84,7 @@ const Stake: NextPage = () => {
                 <b>
                   {!claimableRewards
                     ? "Loading..."
-                    : ethers.utils.formatUnits(claimableRewards, 2)}
+                    : ethers.utils.formatUnits(claimableRewards, 18)}
                 </b>{" "}
                 {tokenBalance?.symbol}
               </p>
