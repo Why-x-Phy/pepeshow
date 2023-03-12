@@ -36,7 +36,7 @@ const Mint: NextPage = () => {
                     <button
                       className={`${styles.quantityControlButton}`}
                       onClick={() => setQuantity(quantity + 1)}
-                      disabled={quantity >= maxClaimable}
+                      
                     >
                       +
                     </button>
