@@ -5,6 +5,7 @@ import { nftDropContractAddress } from "../consts/contractAddresses";
 import styles from "../styles/Home.module.css";
 import { useMemo, useState } from "react";
 
+
 const Mint: NextPage = () => {
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
@@ -14,10 +15,13 @@ const Mint: NextPage = () => {
       <h1 className={styles.h1}>Mint An NFT!</h1>
 
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+
       <p className={styles.explain}>
-       Phase 1 <b>Unreveal <span class="after">Mint</span></b> costs 1 NFT <b>2 Matic</b> and goes until April 30th.
+       Phase 1 <b>Unreveal Mint</b> <br /><br />
+       costs 1 NFT <b>2 Matic</b> and goes until April 30th.
        
       </p>
+
       <p className={styles.explain}>
        
        Phase 2 <b>Reveal Mint</b> Costs 1 NFT <b>3 Matic</b> and runs until May 31th.
