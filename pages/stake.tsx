@@ -64,7 +64,7 @@ const Stake: NextPage = () => {
   }
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return <div></div>;
   }
 
   return (
