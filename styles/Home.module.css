@@ -14,13 +14,14 @@
   font-size: 3rem;
   margin-bottom: 0px;
   color:#3C1B32;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: rgb(49, 49, 49) 0.1em 0.1em 0.1em;
 }
 
 .explain {
   margin-top: 0px;
   font-size: 1.125rem;
   max-width: 1200px;
+  height: 35px;
 }
 
 .divider {
