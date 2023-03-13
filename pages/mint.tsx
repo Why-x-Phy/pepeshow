@@ -12,7 +12,7 @@ const Mint: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Mint An NFT!</h1>
+      <h1 className={styles.h1}>Mint a Angry Animals NFT!</h1>
 
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
