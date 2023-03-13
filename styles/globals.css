@@ -42,4 +42,6 @@ body {
 
 h2 {
   font-size: 4rem;
+  color:#3C1B32;
+  text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
 }
