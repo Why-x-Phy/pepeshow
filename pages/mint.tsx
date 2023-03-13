@@ -12,9 +12,11 @@ const Mint: NextPage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.h1}>Mint An NFT!</h1>
+
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
       <p className={styles.explain}>
-       Phase 1 <b>Unreveal Mint</b> costs 1 NFT <b>2 Matic</b> and goes until April 30th. Phase 2 <b>Reveal Mint</b> Costs 1 NFT <b>3 Matic</b> and runs until May 31th.
+       Phase 1 <b>Unreveal Mint</b> costs 1 NFT <b>2 Matic</b> and goes until April 30th.{" "}
+       Phase 2 <b>Reveal Mint</b> Costs 1 NFT <b>3 Matic</b> and runs until May 31th.
       </p>
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
