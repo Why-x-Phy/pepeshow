@@ -76,6 +76,7 @@
 }
 
 .selectBoxDescription {
+  font-size: 1rem;
   color: rgba(55, 54, 54, 0.9);
   margin-top: 0px;
 }
