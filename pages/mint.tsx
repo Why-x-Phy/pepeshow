@@ -15,7 +15,6 @@ const Mint: NextPage = () => {
 
       <p className={styles.explain}>
        Phase 1 "Unreveal Mint" costs 1 NFT <b>2 Matic</b> and goes until April 30th. Phase 2 "Reveal Mint" Costs 1 NFT <b>3 Matic</b> and runs until May 31th.
-      
       </p>
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
@@ -51,7 +50,7 @@ const Mint: NextPage = () => {
         action={(contract) => contract.erc721.claim(quantity)}
         onSuccess={() => {
           setQuantity(1);
-         {/* alert("NFT Claimed!");*/}
+          alert("NFT Claimed!");
           router.push("/stake");
         }}
         onError={(error) => {
