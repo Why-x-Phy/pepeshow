@@ -64,11 +64,14 @@
   opacity: 0.25;
 }
 
+
+
 .nftBoxGrid {
   max-width: 95vw;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   justify-content: center;
   gap: 2%;
   margin-top: 15px;
@@ -78,6 +81,8 @@
 
 .nftBox {
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   border: 1px solid #ccc;
   min-height: 200px;
