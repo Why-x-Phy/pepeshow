@@ -133,4 +133,4 @@ const Home: NextPage = () => {
     );
   };
   
-  export default Mint;
+  export default Home;
