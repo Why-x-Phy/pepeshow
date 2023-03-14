@@ -129,11 +129,9 @@ const Home: NextPage = () => {
         >
           Claim An NFT
         </Web3Button>
-      </div>
-    );
 
-    return (
-      <div className={styles.container}>
+
+
         <h1 className={styles.h1}>Stake Your NFTs</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
   
@@ -206,8 +204,12 @@ const Home: NextPage = () => {
             </div>
           </>
         )}
+
+        
       </div>
     );
+
+    
   };
   
   export default Home;
