@@ -78,8 +78,8 @@
 
 .nftBox {
   border-radius: 16px;
+  align-items: center;
   border: 1px solid #ccc;
-  width: 19%;
   min-height: 200px;
   padding: 16px;
   margin-top: 15px;
