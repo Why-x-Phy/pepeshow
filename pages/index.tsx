@@ -78,7 +78,7 @@ const Home: NextPage = () => {
     return (
       <div className={styles.container}>
         <p className={styles.minting}> 
-        <h1 className={styles.h1}>Mint a Angry Animals NFT!</h1>
+        <h1 className={styles.h1}>Mint Angry Animals NFT`s</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
         </p>
 
         <p className={styles.staking}> 
-        <h1 className={styles.h1}>Stake Your NFTs</h1>
+        <h1 className={styles.h1}>Stake Your NFT`s</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
   
 
