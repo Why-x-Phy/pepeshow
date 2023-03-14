@@ -120,8 +120,7 @@ const Home: NextPage = () => {
           action={(contract) => contract.erc721.claim(quantity)}
           onSuccess={() => {
             setQuantity(1);
-            alert("NFT Claimed!");
-            router.push("/stake");
+            
           }}
           onError={(error) => {
             alert(error);
