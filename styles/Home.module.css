@@ -24,6 +24,7 @@
 }
 
 .staking {
+  background: rgba(217, 183, 245, 0.1);
   width: 60%;
   border-radius: 16px;
   display: flex;
