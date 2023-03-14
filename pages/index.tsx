@@ -129,6 +129,7 @@ const Home: NextPage = () => {
         >
           Claim An NFT
         </Web3Button>
+        <br /><br /> 
         </p>
 
 
