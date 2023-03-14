@@ -11,7 +11,7 @@
 }
 
 .minting {
-  background: rgb(98, 97, 97);
+  background: rgba(75, 76, 75, 0.3);
   width: 60%;
   border-radius: 16px;
   display: flex;
