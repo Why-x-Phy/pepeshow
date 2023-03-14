@@ -11,6 +11,8 @@
 }
 
 .minting {
+  justify-content: center;
+  align-items: center;
   margin-top: 0px;
   margin-bottom: 30px;
   border: 1px solid rgba(46, 44, 44, 0.4);
@@ -63,8 +65,8 @@
   width: 19%;
   min-height: 200px;
   padding: 16px;
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .optionSelectBox {
