@@ -11,15 +11,8 @@
 }
 
 .minting {
-  margin-top: 96px;
-  margin-bottom: 96px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  position: absolute;
-  padding: 0 24px;
+  margin-top: 0px;
+  margin-bottom: 30px;
   border: 1px solid rgba(46, 44, 44, 0.4);
 }
 
