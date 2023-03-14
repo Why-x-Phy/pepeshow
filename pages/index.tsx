@@ -77,6 +77,7 @@ const Home: NextPage = () => {
 
     return (
       <div className={styles.container}>
+        <div className={styles.mintig}> 
         <h1 className={styles.h1}>Mint a Angry Animals NFT!</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
@@ -128,7 +129,7 @@ const Home: NextPage = () => {
         >
           Claim An NFT
         </Web3Button>
-
+        </div>
 
 
         <h1 className={styles.h1}>Stake Your NFTs</h1>

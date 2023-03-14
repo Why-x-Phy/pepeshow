@@ -10,6 +10,19 @@
   padding: 0 24px;
 }
 
+.minting {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  padding: 0 24px;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+}
+
 .h1 {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 3rem;
@@ -46,8 +59,8 @@
   align-items: center;
   justify-content: center;
   gap: 2%;
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   flex-wrap: wrap;
 }
 
