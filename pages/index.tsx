@@ -2,44 +2,135 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
+import { useMemo, useState, useEffect } from "react";
+
+import {
+  ConnectWallet,
+  ThirdwebNftMedia,
+  useAddress,
+  useContract,
+  useContractRead,
+  useOwnedNFTs,
+  useTokenBalance,
+  Web3Button,
+} from "@thirdweb-dev/react";
+import { BigNumber, ethers } from "ethers";
+import NFTCard from "../components/NFTCard";
+import {
+  nftDropContractAddress,
+  stakingContractAddress,
+  tokenContractAddress,
+} from "../consts/contractAddresses";
+
 
 const Home: NextPage = () => {
   const router = useRouter();
+  const [quantity, setQuantity] = useState(1);
 
-  return (
-    <div className={styles.container}>
-      {/* Top Section */}
-      <h1 className={styles.h1}>Unreveal - Dashboard</h1>
-      <div className={styles.nftBoxGrid}>
-        <div
-          className={styles.optionSelectBox}
-          role="button"
-          onClick={() => router.push(`/mint`)}
-        >
-          {/* Mint a new NFT */}
-          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Mint a new NFT</h2>
-          <p className={styles.selectBoxDescription}>
-           Mint <b>Angry Animals NFT`s Season 1</b> 
-          </p>
-        </div>
+    const address = useAddress();
+    const { contract: nftDropContract } = useContract(
+      nftDropContractAddress,
+      "nft-drop"
+    );
+    const { contract: tokenContract } = useContract(
+      tokenContractAddress,
+      "token"
+    );
+    const { contract, isLoading } = useContract(stakingContractAddress);
+    const { data: ownedNfts } = useOwnedNFTs(nftDropContract, address);
+    const { data: tokenBalance } = useTokenBalance(tokenContract, address);
+    const [claimableRewards, setClaimableRewards] = useState<BigNumber>();
+    const { data: stakedTokens } = useContractRead(
+      contract,
+      "getStakeInfo",
+      address
+    );
+  
+    useEffect(() => {
+      if (!contract || !address) return;
+  
+      async function loadClaimableRewards() {
+        const stakeInfo = await contract?.call("getStakeInfo", address);
+        setClaimableRewards(stakeInfo[1]);
+      }
+  
+      loadClaimableRewards();
+    }, [address, contract]);
+  
+    async function stakeNft(id: string) {
+      if (!address) return;
+  
+      const isApproved = await nftDropContract?.isApproved(
+        address,
+        stakingContractAddress
+      );
+      if (!isApproved) {
+        await nftDropContract?.setApprovalForAll(stakingContractAddress, true);
+      }
+      await contract?.call("stake", [id]);
+    }
+  
+    if (isLoading) {
+      return <div></div>;
+    }
 
-        <div
-          className={styles.optionSelectBox}
-          role="button"
-          onClick={() => router.push(`/stake`)}
+
+    return (
+      <div className={styles.container}>
+        <h1 className={styles.h1}>Mint a Angry Animals NFT!</h1>
+  
+        <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+  
+        <p className={styles.explain}>
+        <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>2 Matic</b> and goes until April 30th.
+         <br /><br /> 
+         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>3 Matic</b> and runs until May 31th.
+        </p>
+        <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+  
+  
+  
+  
+        <div className={styles.quantityContainer}>
+                      <button
+                        className={`${styles.quantityControlButton}`}
+                        onClick={() => setQuantity(quantity - 1)}
+                        disabled={quantity <= 1}
+                      >
+                        -
+                      </button>
+  
+                      <h4>{quantity}</h4>
+  
+                      <button
+                        className={`${styles.quantityControlButton}`}
+                        onClick={() => setQuantity(quantity + 1)}
+                        
+                      >
+                        +
+                      </button>
+                    </div>
+  
+                    
+  
+        <Web3Button
+          colorMode="dark"
+          accentColor="#595858"
+          contractAddress={nftDropContractAddress}
+          action={(contract) => contract.erc721.claim(quantity)}
+          onSuccess={() => {
+            setQuantity(1);
+            alert("NFT Claimed!");
+            router.push("/stake");
+          }}
+          onError={(error) => {
+            alert(error);
+          }}
         >
-          {/* Staking an NFT */}
-          <Image src="/icons/token.webp" alt="token" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Stake Your NFTs</h2>
-          <p className={styles.selectBoxDescription}>
-            Stake <b>Angry Animals NFT`s</b> and earn <b>Unreveal</b> Token{" "}
-          </p>
-        </div>
+          Claim An NFT
+        </Web3Button>
       </div>
-    </div>
-  );
-};
-
-{/* onClick={() => router.push(`/stake`)}  */}
-export default Home;
+    );
+  };
+  
+  export default Mint;
