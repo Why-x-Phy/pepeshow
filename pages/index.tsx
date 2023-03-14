@@ -132,7 +132,7 @@ const Home: NextPage = () => {
         <br /><br /> 
         </p>
 
-
+        <p className={styles.staking}> 
         <h1 className={styles.h1}>Stake Your NFTs</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
   
@@ -205,7 +205,7 @@ const Home: NextPage = () => {
           </>
        
 
-        
+          </p>
       </div>
     );
 

@@ -22,6 +22,18 @@
   border: 1px solid rgba(46, 44, 44, 0.4);
 }
 
+.staking {
+  width: 60%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+}
+
 .h1 {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 3rem;
