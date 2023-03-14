@@ -135,9 +135,8 @@ const Home: NextPage = () => {
         <h1 className={styles.h1}>Stake Your NFTs</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
   
-        {!address ? (
-          <ConnectWallet />
-        ) : (
+
+
           <>
             <h2>Your Tokens</h2>
             <div className={styles.tokenGrid}>
@@ -203,7 +202,7 @@ const Home: NextPage = () => {
               ))}
             </div>
           </>
-        )}
+       
 
         
       </div>
