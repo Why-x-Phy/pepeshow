@@ -146,3 +146,77 @@ const Stake: NextPage = () => {
 };
 
 export default Stake;
+
+
+<div className={styles.container}>
+<h1 className={styles.h1}>Stake Your NFTs</h1>
+<hr className={`${styles.divider} ${styles.spacerTop}`} />
+
+
+
+  <>
+    <h2>Your Tokens</h2>
+    <div className={styles.tokenGrid}>
+      <div className={styles.tokenItem}>
+        <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
+        <p className={styles.tokenValue}>
+          <b>
+            {!claimableRewards
+              ? "Loading..."
+              : ethers.utils.formatUnits(claimableRewards, 18)}
+          </b>{" "}
+          {tokenBalance?.symbol}
+        </p>
+      </div>
+      <div className={styles.tokenItem}>
+        <h3 className={styles.tokenLabel}>Current Balance</h3>
+        <p className={styles.tokenValue}>
+          <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
+        </p>
+      </div>
+    </div>
+
+    <Web3Button
+     colorMode="dark"
+     accentColor="#595858"
+      action={(contract) => contract.call("claimRewards")}
+      contractAddress={stakingContractAddress}
+    >
+      Claim Rewards
+    </Web3Button>
+
+    <hr className={`${styles.divider} ${styles.spacerTop}`} />
+    <h2>Your Staked NFTs</h2>
+    <div className={styles.nftBoxGrid}>
+      {stakedTokens &&
+        stakedTokens[0]?.map((stakedToken: BigNumber) => (
+          <NFTCard
+            tokenId={stakedToken.toNumber()}
+            key={stakedToken.toString()}
+          />
+        ))}
+    </div>
+
+    <hr className={`${styles.divider} ${styles.spacerTop}`} />
+    <h2>Your Unstaked NFTs</h2>
+    <div className={styles.nftBoxGrid}>
+      {ownedNfts?.map((nft) => (
+        <div className={styles.nftBox} key={nft.metadata.id.toString()}>
+          <ThirdwebNftMedia
+            metadata={nft.metadata}
+            className={styles.nftMedia}
+          />
+          <h3>{nft.metadata.name}</h3>
+          <Web3Button
+           colorMode="dark"
+           accentColor="#595858"
+            contractAddress={stakingContractAddress}
+            action={() => stakeNft(nft.metadata.id)}
+          >
+            Stake
+          </Web3Button>
+        </div>
+      ))}
+    </div>
+  </>
+  </div>
