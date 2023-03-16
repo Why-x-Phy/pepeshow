@@ -147,7 +147,7 @@ const Home: NextPage = () => {
                   <b>
                     {!claimableRewards
                       ? "Loading..."
-                      : ethers.utils.formatUnits(claimableRewards, 18)}
+                      : ethers.utils.formatUnits(claimableRewards, 18, 2)}
                   </b>{" "}
                   {tokenBalance?.symbol}
                 </p>
