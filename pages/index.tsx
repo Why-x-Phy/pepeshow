@@ -83,9 +83,9 @@ const Home: NextPage = () => {
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>2 Matic</b> and goes until April 30th.
+        <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>3 Matic</b> and goes until April 30th.
          <br /><br /> 
-         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>3 Matic</b> and runs until May 31th.
+         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>4 Matic</b> and runs until May 31th.
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
@@ -147,7 +147,7 @@ const Home: NextPage = () => {
                   <b>
                     {!claimableRewards
                       ? "Loading..."
-                      : ethers.utils.formatUnits(claimableRewards, 18, 2)}
+                      : ethers.utils.formatUnits(claimableRewards, 18)}
                   </b>{" "}
                   {tokenBalance?.symbol}
                 </p>
