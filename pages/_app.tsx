@@ -4,7 +4,7 @@ import "../styles/globals.css";
 import Head from "next/head";
 
 // This is the chainId your dApp will work on.
-const activeChain = "goerli";
+const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
