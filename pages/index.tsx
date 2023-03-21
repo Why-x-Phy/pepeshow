@@ -124,7 +124,7 @@ const Home: NextPage = () => {
             
           }}
           onError={(error) => {
-            alert(error);
+            
           }}
         >
           Claim An NFT
