@@ -43,7 +43,7 @@ const Home: NextPage = () => {
     const { data: stakedTokens } = useContractRead(
       contract,
       "getStakeInfo",
-      address
+      [address]
     );
   
     useEffect(() => {
@@ -115,8 +115,7 @@ const Home: NextPage = () => {
                     
   
         <Web3Button
-          colorMode="dark"
-          accentColor="#595858"
+          
           contractAddress={nftDropContractAddress}
           action={(contract) => contract.erc721.claim(quantity)}
           onSuccess={() => {
@@ -161,8 +160,7 @@ const Home: NextPage = () => {
             </div>
   
             <Web3Button
-             colorMode="dark"
-             accentColor="#595858"
+            
               action={(contract) => contract.call("claimRewards")}
               contractAddress={stakingContractAddress}
             >
@@ -192,8 +190,7 @@ const Home: NextPage = () => {
                   />
                   <h3>{nft.metadata.name}</h3>
                   <Web3Button
-                   colorMode="dark"
-                   accentColor="#595858"
+                 
                     contractAddress={stakingContractAddress}
                     action={() => stakeNft(nft.metadata.id)}
                   >
