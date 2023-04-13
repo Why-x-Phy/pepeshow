@@ -50,7 +50,7 @@ const Home: NextPage = () => {
       if (!contract || !address) return;
   
       async function loadClaimableRewards() {
-        const stakeInfo = await contract?.call("getStakeInfo", address);
+        const stakeInfo = await contract?.call("getStakeInfo", [address]);
         setClaimableRewards(stakeInfo[1]);
       }
   
