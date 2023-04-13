@@ -126,7 +126,7 @@ const Home: NextPage = () => {
             
           }}
         >
-          Claim An NFT
+          Mint An NFT
         </Web3Button>
         <br /><br /> 
         </p>
