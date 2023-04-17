@@ -24,6 +24,12 @@
   box-shadow: 0 0 18px 0 #82919b; 
 }
 
+.wallet {
+  color:#1b1b1a !important;
+  background: rgb(234, 234, 231) !important;
+}
+
+
 .staking {
   background: rgba(217, 183, 245, 0.1);
   width: 60%;
