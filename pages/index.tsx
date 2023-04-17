@@ -79,7 +79,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <p className={styles.minting}> 
         <br /><br />
-        <ConnectWallet btnTitle="Connect Wallet" className={styles.wallet} />
+        <ConnectWallet theme="light" btnTitle="Connect Wallet" className={styles.wallet} />
         <h1 className={styles.h1}>Mint Angry Animals NFTs</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
