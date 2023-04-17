@@ -117,7 +117,7 @@ const Home: NextPage = () => {
                     
   
         <Web3Button
-          
+          className={styles.wallet}
           contractAddress={nftDropContractAddress}
           action={(contract) => contract.erc721.claim(quantity)}
           onSuccess={() => {
@@ -162,7 +162,7 @@ const Home: NextPage = () => {
             </div>
   
             <Web3Button
-            
+              className={styles.wallet}
               action={(contract) => contract.call("claimRewards")}
               contractAddress={stakingContractAddress}
             >
@@ -192,7 +192,7 @@ const Home: NextPage = () => {
                   />
                   <h3>{nft.metadata.name}</h3>
                   <Web3Button
-                 
+                    className={styles.wallet}
                     contractAddress={stakingContractAddress}
                     action={() => stakeNft(nft.metadata.id)}
                   >
