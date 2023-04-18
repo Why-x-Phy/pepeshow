@@ -80,7 +80,7 @@ const Home: NextPage = () => {
         <p className={styles.minting}> 
         <br /><br />
         
-        <ConnectWallet theme="light" btnTitle="Connect Wallet" className={styles.wallet} />
+        <ConnectWallet btnTitle="Connect Wallet" className={styles.wallet} />
        
         
         
