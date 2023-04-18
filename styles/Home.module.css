@@ -29,6 +29,18 @@
   background: #595858 !important;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Safari iOS */
+  transform: translate(-50%, -50%); /* Rest of browsers */
+
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
 
 .staking {
   background: rgba(217, 183, 245, 0.1);

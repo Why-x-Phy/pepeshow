@@ -79,7 +79,11 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <p className={styles.minting}> 
         <br /><br />
+        <div className={styles.modal}>
         <ConnectWallet theme="light" btnTitle="Connect Wallet" className={styles.wallet} />
+        </div>
+        
+        
         <h1 className={styles.h1}>Mint Angry Animals NFTs</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
@@ -180,7 +184,6 @@ const Home: NextPage = () => {
                   />
                 ))}
             </div>
-  
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
             <h2>Your Unstaked NFTs</h2>
             <div className={styles.nftBoxGrid}>
