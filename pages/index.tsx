@@ -79,9 +79,9 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <p className={styles.minting}> 
         <br /><br />
-        <div className={styles.modal}>
+        
         <ConnectWallet theme="light" btnTitle="Connect Wallet" className={styles.wallet} />
-        </div>
+       
         
         
         <h1 className={styles.h1}>Mint Angry Animals NFTs</h1>

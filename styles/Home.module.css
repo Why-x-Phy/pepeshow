@@ -29,6 +29,11 @@
   background: #595858 !important;
 }
 
+.tw-connect-wallet.css {
+  color:#f3f0f3 !important;
+  background: #595858 !important;
+}
+
 .modal {
   position: absolute;
   top: 50%;
