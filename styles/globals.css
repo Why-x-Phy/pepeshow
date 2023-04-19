@@ -62,6 +62,6 @@ h2 {
   justify-content: top !important;
   flex-direction: column !important;
   padding: 28px 26px 33px 25px !important;
-  position:top !important;
-  margin-bottom: 8000px !important;
+  position:absolute !important;
+  margin-top: 1px important;
  }
