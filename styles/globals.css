@@ -63,5 +63,6 @@ h2 {
   flex-direction: column !important;
   padding: 28px 26px 33px 25px !important;
   position:absolute !important;
-  margin-top: 1px important;
+  margin-top: 1px !important;
+  top: 200px !important;
  }
