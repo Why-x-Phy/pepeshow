@@ -12,7 +12,7 @@
 
 .minting {
   background: rgba(217, 183, 245, 0.1);
-  width: 60%;
+  width: 90%;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
 
 .staking {
   background: rgba(217, 183, 245, 0.1);
-  width: 60%;
+  width: 90%;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
