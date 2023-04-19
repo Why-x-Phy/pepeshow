@@ -48,21 +48,18 @@ h2 {
 }
 
 .tw-connected-wallet {
-  background: #595858 !important; 
+  background: #3C1B32 !important; 
  }
 
  .css-6og8le{
-  background: opacity !important;
-  
+ background-color:rgba(255,255,255,0.2) !important;  
  }
 
  .css-1hr3n8y {
-  background: #834444 !important;
-  align-items: top !important;
-  justify-content: top !important;
-  flex-direction: column !important;
-  padding: 28px 26px 33px 25px !important;
-  position:absolute !important;
-  margin-top: 1px !important;
-  top: 200px !important;
+  background: #3C1B32 !important;
+  top: 500px !important;
+ }
+
+ .css-tkbtnr {
+  background: #3C1B32 !important;
  }
