@@ -67,7 +67,7 @@ const Home: NextPage = () => {
       if (!isApproved) {
         await nftDropContract?.setApprovalForAll(stakingContractAddress, true);
       }
-      await contract?.call("stake", [id]);
+      await contract?.call("stake", [[id]]);
     }
   
     if (isLoading) {
