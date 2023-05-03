@@ -73,8 +73,10 @@ const Home: NextPage = () => {
   }
 
   if (isLoading) {
-    return <div>Loading</div>;
+    
+    return <div>Loading...</div>;
   }
+
 
   async function withdrawNfts(ids: string[]) {
     if (!address) return;
@@ -86,6 +88,9 @@ const Home: NextPage = () => {
     return (
       <div className={styles.container}>
         <p className={styles.minting}> 
+
+
+
         <br /><br />
         
         <ConnectWallet btnTitle="Connect Wallet" className={styles.wallet} />

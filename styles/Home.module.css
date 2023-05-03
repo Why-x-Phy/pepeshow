@@ -10,6 +10,11 @@
   padding: 0 24px;
 }
 
+.loading {
+  justify-content: center;
+
+}
+
 .minting {
   background: rgba(217, 183, 245, 0.1);
   width: 100%;
@@ -107,37 +112,31 @@
   align-items: center;
   flex-direction: column;
   border: 1px solid #ccc;
-  min-height: 200px;
+  min-height: 300x;
   padding: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  height: 300px;
+  height: 250px;
   max-width: 200px;
   transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px;
-  margin-bottom: 60px;
+  margin: 10px;
+  margin-bottom: 25px;
 }
 
 .nftBox h3 {
-  height: 60px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-radius: 15px;
+  
 }
 
-.nftMedia {
-  max-width: 50%;
-  max-height: 140px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 15px;
-  object-fit: contain;
-}
+
 
 .nftBox .nftMedia {
   transition: transform 0.3s ease-in-out;
@@ -290,8 +289,8 @@
 }
 
 .nftMedia {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 140px;
+  max-height: 140px;
   border-radius: 15px;
 }
 
