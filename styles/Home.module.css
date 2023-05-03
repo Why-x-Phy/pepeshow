@@ -111,6 +111,46 @@
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  height: 300px;
+  max-width: 200px;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  margin-bottom: 60px;
+}
+
+.nftBox h3 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nftMedia {
+  max-width: 50%;
+  max-height: 140px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.nftBox .nftMedia {
+  transition: transform 0.3s ease-in-out;
+}
+
+.selected {
+  transform: scale(1.1);
+  border: 1px solid #f213a4;
+  animation: glowing-border 1.5s infinite;
+}
+
+.selected .nftMedia {
+  transform: scale(1.1);
 }
 
 .optionSelectBox {
@@ -126,6 +166,19 @@
   padding-left: 12px;
   padding-right: 12px;
   cursor: pointer;
+}
+
+/* Keyframes for select border aniamtion*/
+@keyframes glowing-border {
+  0% {
+    box-shadow: 0 0 5px #f213a4;
+  }
+  50% {
+    box-shadow: 0 0 10px #f213a4, 0 0 20px #8008b7;
+  }
+  100% {
+    box-shadow: 0 0 5px #f213a4;
+  }
 }
 
 .selectBoxTitle {
