@@ -195,7 +195,7 @@ const Home: NextPage = () => {
         action={() => withdrawNfts(selectedNftsToWithdraw)}
         isDisabled={selectedNftsToWithdraw.length === 0}
       >
-        Withdraw Selected NFTs
+        Unstake Selected NFTs
       </Web3Button>
 
           <div className={styles.nftBoxGrid}>
