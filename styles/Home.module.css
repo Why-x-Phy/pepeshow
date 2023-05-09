@@ -124,6 +124,7 @@
   justify-content: center;
   margin: 10px;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .nftBox h3 {
@@ -168,6 +169,7 @@
   padding-right: 12px;
   cursor: pointer;
 }
+
 
 /* Keyframes for select border aniamtion*/
 @keyframes glowing-border {
