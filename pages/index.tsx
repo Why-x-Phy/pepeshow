@@ -72,11 +72,14 @@ const Home: NextPage = () => {
     setSelectedNfts([]);  // clear the selected NFTs after staking
   }
 
-  if (isLoading) {
+if (isLoading) {
     
-    return <div>Loading...</div>;
+    return (
+      <div className={styles.loading}>
+      <h1 className={styles.h1}></h1>
+      </div>
+    )
   }
-
 
   async function withdrawNfts(ids: string[]) {
     if (!address) return;
