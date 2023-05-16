@@ -160,6 +160,7 @@
 .selected {
   transform: scale(1.1);
   border: 1px solid #ffdbf5;
+  box-shadow: 0 0 10px #ffdbf5, 0 0 20px #8008b7;
   animation: glowing-border 1.5s infinite;
 }
 
@@ -183,7 +184,7 @@
 }
 
 
-/* Keyframes for select border aniamtion*/
+/* Keyframes for select border aniamtion
 @keyframes glowing-border {
   0% {
     box-shadow: 0 0 5px #ffdbf5;
@@ -192,9 +193,9 @@
     box-shadow: 0 0 10px #ffdbf5, 0 0 20px #8008b7;
   }
   100% {
-    box-shadow: 0 0 5px #ffdbf5;
+    box-shadow: 0 0 5px #ffdbf5; 
   }
-}
+}*/
 
 
 
