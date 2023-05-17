@@ -24,10 +24,12 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
       {nft && (
         <div>
           {nft.metadata && (
+            
             <ThirdwebNftMedia
-              metadata={nft.metadata}
-              className={styles.nftMedia}
+            metadata={nft.metadata}
+            className={styles.nftMedia}
             />
+            
           )}
           <h3>{nft.metadata.name}</h3>
           
