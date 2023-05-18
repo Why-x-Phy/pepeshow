@@ -75,8 +75,8 @@ const Home: NextPage = () => {
 if (isLoading) {
     
     return (
-      <div className={styles.loading}>
       
+      <div className={styles.loading}>      
       </div>
     )
   }
