@@ -11,7 +11,7 @@
 }
 
 .loading {
-  top: 0px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
