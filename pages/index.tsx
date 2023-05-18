@@ -76,7 +76,7 @@ if (isLoading) {
     
     return (
       <div className={styles.loading}>
-      <h1 className={styles.h1}></h1>
+      
       </div>
     )
   }
