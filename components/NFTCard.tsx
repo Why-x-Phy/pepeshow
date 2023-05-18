@@ -13,7 +13,9 @@ import styles from "../styles/Home.module.css";
 
 interface NFTCardProps {
   tokenId: number;
+
 }
+
 
 const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
   const { contract } = useContract(nftDropContractAddress, "nft-drop");
@@ -21,6 +23,7 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
 
   return (
     <>
+    
       {nft && (
         <div>
           {nft.metadata && (
