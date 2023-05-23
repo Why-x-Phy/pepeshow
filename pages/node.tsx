@@ -110,12 +110,12 @@ if (isLoading) {
        
         
         
-        <h1 className={styles.h1}>Mint Angry Animals NFTs</h1>
+        <h1 className={styles.h1}>Buy a Genesis Edition Node</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>3 Matic</b> and goes until April 30th.
+        <b>GENESIS EDITION NODE</b> costs <b>25 Matic</b>.
          <br /><br /> 
          <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>4 Matic</b> and runs until May 31th.
         </p>
@@ -158,13 +158,13 @@ if (isLoading) {
             
           }}
         >
-          Mint An NFT
+          Buy a Node
         </Web3Button>
         <br /><br /> 
         </p>
 
         <p className={styles.staking}> 
-        <h1 className={styles.h1}>Stake Your NFTs</h1>
+        <h1 className={styles.h1}>Node</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
   
 
@@ -200,7 +200,7 @@ if (isLoading) {
             </Web3Button>
   
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Staked NFTs</h2>
+          <h2>Your Active Node`s</h2>
 
           <Web3Button
         className={styles.wallet}
@@ -208,7 +208,7 @@ if (isLoading) {
         action={() => withdrawNfts(selectedNftsToWithdraw)}
         isDisabled={selectedNftsToWithdraw.length === 0}
       >
-        Unstake Selected NFTs
+        Deactivate Selected Node`s
       </Web3Button>
 
           <div className={styles.nftBoxGrid}>
@@ -240,7 +240,7 @@ if (isLoading) {
 
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Unstaked NFTs</h2>
+          <h2>Your Deactivate Node`s</h2>
 
           <Web3Button
             className={styles.wallet}
@@ -248,7 +248,7 @@ if (isLoading) {
             action={() => stakeNfts(selectedNfts)}
             isDisabled={selectedNfts.length === 0}
             >
-            Stake Selected NFTs
+            Activate Selected Node`s
           </Web3Button>
 
           <div className={styles.nftBoxGrid}>
