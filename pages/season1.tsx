@@ -15,10 +15,10 @@ import {
   Web3Button,
 } from "@thirdweb-dev/react";
 import { BigNumber, ethers } from "ethers";
-import NFTCard from "../components/NFTCard";
+import NFTCard from "../components/NFTCardSeason1";
 import {
-  nftDropContractAddress,
-  stakingContractAddress,
+  nftDropSeason1,
+  stakingSeason1,
   tokenContractAddress,
 } from "../consts/contractAddresses";
 
@@ -29,14 +29,14 @@ const Home: NextPage = () => {
 
     const address = useAddress();
     const { contract: nftDropContract } = useContract(
-      nftDropContractAddress,
+      nftDropSeason1,
       "nft-drop"
     );
     const { contract: tokenContract } = useContract(
       tokenContractAddress,
       "token"
     );
-    const { contract, isLoading } = useContract(stakingContractAddress);
+    const { contract, isLoading } = useContract(stakingSeason1);
     const { data: ownedNfts } = useOwnedNFTs(nftDropContract, address);
     const { data: tokenBalance } = useTokenBalance(tokenContract, address);
     const [claimableRewards, setClaimableRewards] = useState<BigNumber>();
@@ -63,10 +63,10 @@ const Home: NextPage = () => {
 
     const isApproved = await nftDropContract?.isApproved(
       address,
-      stakingContractAddress
+      stakingSeason1
     );
     if (!isApproved) {
-      await nftDropContract?.setApprovalForAll(stakingContractAddress, true);
+      await nftDropContract?.setApprovalForAll(stakingSeason1, true);
     }
     await contract?.call("stake", [ids]);
     setSelectedNfts([]);  // clear the selected NFTs after staking
@@ -146,7 +146,7 @@ if (isLoading) {
   
         <Web3Button
           className={styles.wallet}
-          contractAddress={nftDropContractAddress}
+          contractAddress={nftDropSeason1}
           action={(contract) => contract.erc721.claim(quantity)}
           onSuccess={() => {
             setQuantity(1);
@@ -192,7 +192,7 @@ if (isLoading) {
             <Web3Button
               className={styles.wallet}
               action={(contract) => contract.call("claimRewards")}
-              contractAddress={stakingContractAddress}
+              contractAddress={stakingSeason1}
             >
               Claim Rewards
             </Web3Button>
@@ -202,7 +202,7 @@ if (isLoading) {
 
           <Web3Button
         className={styles.wallet}
-        contractAddress={stakingContractAddress}
+        contractAddress={stakingSeason1}
         action={() => withdrawNfts(selectedNftsToWithdraw)}
         isDisabled={selectedNftsToWithdraw.length === 0}
       >
@@ -242,7 +242,7 @@ if (isLoading) {
 
           <Web3Button
             className={styles.wallet}
-            contractAddress={stakingContractAddress}
+            contractAddress={stakingSeason1}
             action={() => stakeNfts(selectedNfts)}
             isDisabled={selectedNfts.length === 0}
             >

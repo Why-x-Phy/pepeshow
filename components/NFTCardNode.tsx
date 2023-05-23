@@ -6,7 +6,7 @@ import {
 } from "@thirdweb-dev/react";
 import type { FC } from "react";
 import {
-  nftDropContractAddress,
+  nftDropNode,
   
 } from "../consts/contractAddresses";
 import styles from "../styles/Home.module.css";
@@ -18,7 +18,7 @@ interface NFTCardProps {
 
 
 const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
-  const { contract } = useContract(nftDropContractAddress, "nft-drop");
+  const { contract } = useContract(nftDropNode, "nft-drop");
   const { data: nft } = useNFT(contract, tokenId);
 
   return (
