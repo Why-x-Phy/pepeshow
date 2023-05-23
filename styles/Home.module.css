@@ -167,6 +167,24 @@
   transform: scale(1.1);
 }
 
+.optionSelectBack {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 30%;
+  min-height: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+  box-shadow: 0 0 18px 0 #82919b; 
+}
+
 .optionSelectBox {
   border-radius: 16px;
   border: 1px solid #ccc;
@@ -180,6 +198,7 @@
   padding-left: 12px;
   padding-right: 12px;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 
 
@@ -203,6 +222,12 @@
   font-size: 3rem;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.selectBoxTitleBack {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .selectBoxDescription {
