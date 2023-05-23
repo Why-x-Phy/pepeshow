@@ -21,8 +21,8 @@ const Home: NextPage = () => {
           <Image src="/icons/coming.webp" alt="coming" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>Node Area</h2>
           <p className={styles.selectBoxDescription}>
-          Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
-            to stake your NFTs, and earn tokens from the <b>Token</b> contract.
+          Get a rare <b>Genesis Edition NFT</b> and operate a <b>Unreveal Node</b>{" "}
+          and generate <b>Unreveal Token</b> to buy herewith free NFT`s.
           </p>
         </div>
 
