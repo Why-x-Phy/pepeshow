@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/node`)}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
+          <Image src="/icons/coming.webp" alt="coming" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>Node Area</h2>
           <p className={styles.selectBoxDescription}>
           Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
@@ -29,10 +29,10 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/season1`)}
+          onClick={() => router.push(`/`)}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/drop.webp" alt="token" width={64} height={64} />
+          <Image src="/icons/gorilla.webp" alt="gorilla" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>Season 1</h2>
           <p className={styles.selectBoxDescription}>
             Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/season2`)}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
+          <Image src="/icons/lion.webp" alt="lion" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>Season 2</h2>
           <p className={styles.selectBoxDescription}>
           Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
@@ -57,10 +57,10 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/season3`)}
+          onClick={() => router.push(`/`)}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/drop.webp" alt="token" width={64} height={64} />
+          <Image src="/icons/coming.webp" alt="coming" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>Season 3</h2>
           <p className={styles.selectBoxDescription}>
             Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
