@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/node`)}
+          onClick={() => router.push(`/`)}
         >
           {/* Mint a new NFT */}
           <Image src="/icons/coming.webp" alt="coming" width={64} height={64} />
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/`)}
+          onClick={() => router.push(`/season1`)}
         >
           {/* Staking an NFT */}
           <Image src="/icons/gorilla.webp" alt="gorilla" width={64} height={64} />
