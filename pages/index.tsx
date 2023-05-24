@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/`)}
+          onClick={() => router.push(`/node`)}
         >
           {/* Mint a new NFT */}
           <Image src="/icons/coming.webp" alt="coming" width={64} height={64} />

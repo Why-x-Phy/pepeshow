@@ -110,14 +110,14 @@ if (isLoading) {
        
         
         
-        <h1 className={styles.h1}>Buy a Genesis Edition Node</h1>
+        <h1 className={styles.h1}>Buy a Genesis Edition NFT</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        <b>GENESIS EDITION NODE</b> costs <b>25 Matic</b>.
+        <b>GENESIS EDITION NFT</b> costs <b>25 Matic</b>.
          <br /><br /> 
-         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>4 Matic</b> and runs until May 31th.
+         <b>And activate your node</b> to generate <b>Unreveal Token</b> with it.
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
@@ -164,7 +164,7 @@ if (isLoading) {
         </p>
 
         <p className={styles.staking}> 
-        <h1 className={styles.h1}>Node</h1>
+        <h1 className={styles.h1}>Your Unreveal Node`s</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
   
 
@@ -240,7 +240,7 @@ if (isLoading) {
 
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Deactivate Node`s</h2>
+          <h2>Your Deactivated Node`s</h2>
 
           <Web3Button
             className={styles.wallet}
