@@ -215,7 +215,7 @@ if (isLoading) {
             {stakedTokens &&
               stakedTokens[0]?.map((stakedToken: BigNumber) => (
                 <div
-                  className={`${styles.nftBox} ${
+                  className={`${styles.nftBoxNode} ${
                     selectedNftsToWithdraw.includes(stakedToken.toString())
                       ? styles.selected
                       : ""
@@ -254,7 +254,7 @@ if (isLoading) {
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => (
               <div
-                className={`${styles.nftBox} ${
+                className={`${styles.nftBoxNode} ${
                   selectedNfts.includes(nft.metadata.id) ? styles.selected : ""
                 }`}
                 key={nft.metadata.id.toString()}

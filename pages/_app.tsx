@@ -5,6 +5,7 @@ import Head from "next/head";
 
 // This is the chainId your dApp will work on.
 const activeChain = "polygon";
+//const activeChain = "mumbai";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

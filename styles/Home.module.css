@@ -150,6 +150,39 @@
   
 }
 
+.nftBoxNode {
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #3C1B32;
+  min-height: 300x;
+  padding: 10px;
+  margin-top: 10px;
+  
+  max-width: 200px;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.nftBoxNode video {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  font-family: cursive;
+  text-shadow: 0.1em 0.1em 0.2em #ffdbf5;
+  
+}
+
 
 
 .nftBox .nftMedia {
