@@ -104,7 +104,7 @@ if (isLoading) {
 
         <br /><br />
         
-        <ConnectWallet btnTitle="Connect Wallet" className={styles.wallet} />
+        <ConnectWallet  />
        
         
         
