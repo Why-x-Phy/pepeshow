@@ -108,7 +108,7 @@ if (isLoading) {
        
         
         
-        <h1 className={styles.h1}>Mint Angry Animals NFTs</h1>
+        <h1 className={styles.h1}>Mint Angry Animals Season 2 NFTs</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
@@ -162,7 +162,7 @@ if (isLoading) {
         </p>
 
         <p className={styles.staking}> 
-        <h1 className={styles.h1}>Stake Your NFTs</h1>
+        <h1 className={styles.h1}>Stake Your Season 2 NFTs</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
   
 
