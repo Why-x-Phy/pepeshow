@@ -98,7 +98,7 @@ if (isLoading) {
           {/* Mint a new NFT */}
           <h2 className={styles.selectBoxTitleBack}>Back to Dashboard</h2>
         </div>
-        <p className={styles.minting}> 
+        <p className={styles.minting}>
 
 
 
@@ -108,21 +108,21 @@ if (isLoading) {
        
         
         
-        <h1 className={styles.h1}>Mint Angry Animals Season 1 NFTs</h1>
+        <h1 className={styles.h1}>Angry Animals Season 1 is completed</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>3 Matic</b> and goes until April 30th.
+        <b>Unreveal and Reveal Mint is completed</b>
          <br /><br /> 
-         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>4 Matic</b> and runs until May 31th.
+         <b>Season 2 Mint is opened</b>
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
   
         
   
-        <div className={styles.quantityContainer}>
+        {/*<div className={styles.quantityContainer}>
                       <button
                         className={`${styles.quantityControlButton}`}
                         onClick={() => setQuantity(quantity - 1)}
@@ -140,7 +140,7 @@ if (isLoading) {
                       >
                         +
                       </button>
-                    </div>
+                    </div> 
   
                     
   
@@ -157,7 +157,7 @@ if (isLoading) {
           }}
         >
           Mint An NFT
-        </Web3Button>
+        </Web3Button> */}
         <br /><br /> 
         </p>
 
@@ -175,7 +175,7 @@ if (isLoading) {
                 <p className={styles.tokenValue}>
                   <b>
                     {!claimableRewards
-                      ? "Loading..."
+                      ? ""
                       : ethers.utils.formatUnits(claimableRewards, 18)}
                   </b>{" "}
                   {tokenBalance?.symbol}
@@ -184,7 +184,8 @@ if (isLoading) {
               <div className={styles.tokenItem}>
                 <h3 className={styles.tokenLabel}>Current Balance</h3>
                 <p className={styles.tokenValue}>
-                  <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
+                  <b>
+                    {tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
                 </p>
               </div>
             </div>

@@ -175,7 +175,7 @@ if (isLoading) {
                 <p className={styles.tokenValue}>
                   <b>
                     {!claimableRewards
-                      ? "Loading..."
+                      ? ""
                       : ethers.utils.formatUnits(claimableRewards, 18)}
                   </b>{" "}
                   {tokenBalance?.symbol}
