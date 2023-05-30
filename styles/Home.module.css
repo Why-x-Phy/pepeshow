@@ -334,6 +334,14 @@
   font-weight: 500;
 }
 
+/* On Mobile, make tokenGrid 100% width */
+@media only screen and (max-width: 850px) {
+  .tokenItem {
+    width: 90%;
+    margin-top: 12px;
+    margin-left: 10;
+  }
+}
 
 /* Screen less than 630, then hide .center */
 @media only screen and (max-width: 630px) {
