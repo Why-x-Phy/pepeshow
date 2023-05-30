@@ -339,6 +339,7 @@
   .tokenItem {
     width: 90%;
     margin-top: 12px;
+    margin: 0px 5px;
   }
 }
 
