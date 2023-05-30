@@ -339,6 +339,10 @@
   .tokenItem {
     width: 90%;
     margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-left: 10;
   }
 }
