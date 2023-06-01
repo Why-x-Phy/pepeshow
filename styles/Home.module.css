@@ -227,7 +227,7 @@
 }
 
 .optionSelectBack:hover {
-  background-color: rgba(255, 219, 245, 0.5);
+  background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
   transition: 0.7s;
 }
 
@@ -251,7 +251,7 @@
 }
 
 .optionSelectBox:hover {
-  background-color: rgba(255, 219, 245, 0.5);
+  background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
   transition: 0.7s;
 }
 
