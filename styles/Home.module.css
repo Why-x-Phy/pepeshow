@@ -229,6 +229,7 @@
 .optionSelectBack:hover {
   background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
   transition: 0.7s;
+  transform: scale(1.05);
 }
 
 
@@ -253,6 +254,7 @@
 .optionSelectBox:hover {
   background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
   transition: 0.7s;
+  transform: scale(1.02);
 }
 
 /* Keyframes for select border aniamtion
