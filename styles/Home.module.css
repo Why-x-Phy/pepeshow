@@ -219,6 +219,12 @@
   box-shadow: 0 0 18px 0 #82919b; 
 }
 
+.optionSelectBack:hover {
+  background-color: rgba(255, 219, 245, 0.25);
+  transition: 0.7s;
+}
+
+
 .optionSelectBox {
   border-radius: 16px;
   border: 1px solid #ccc;
@@ -237,6 +243,10 @@
   box-shadow: 0 0 18px 0 #82919b; 
 }
 
+.optionSelectBox:hover {
+  background-color: rgba(255, 219, 245, 0.25);
+  transition: 0.7s;
+}
 
 /* Keyframes for select border aniamtion
 @keyframes glowing-border {
