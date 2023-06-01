@@ -227,7 +227,7 @@
 }
 
 .optionSelectBack:hover {
-  background-color: rgba(255, 219, 245, 0.25);
+  background-color: rgba(255, 219, 245, 0.5);
   transition: 0.7s;
 }
 
@@ -251,7 +251,7 @@
 }
 
 .optionSelectBox:hover {
-  background-color: rgba(255, 219, 245, 0.25);
+  background-color: rgba(255, 219, 245, 0.5);
   transition: 0.7s;
 }
 
