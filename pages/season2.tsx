@@ -119,11 +119,9 @@ if (isLoading) {
          <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>8 Matic</b> and runs until July 31th.
         </p>
         */}
-        <b> Unreveal Token Mint</b> is open and 1 NFT costs <b>15 000 UR</b> and goes until Juni 2th 6pm UTC.
+        <b> Whitelist Mint</b> is open and goes until Juni 4th 6:30pm UTC.
          <br /><br /> 
-         You can earn <b>Unreveal Tokens</b> by staking Season 1 or the upcoming Season 2 NFTs.
-         <br /><br /> 
-         Unreveal Mint for <b>4 Matic</b> Launches in <b>3 days</b>
+         Unreveal Mint for <b>4 Matic</b> Launches in <b>2 days</b>
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
