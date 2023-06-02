@@ -178,7 +178,7 @@ if (isLoading) {
                   <b>
                     {!claimableRewards
                       ? "Loading..."
-                      : ethers.utils.formatUnits(claimableRewards, 18)}
+                      : Number(ethers.utils.formatUnits(claimableRewards, 18)).toFixed(2)}
                   </b>{" "}
                   {tokenBalance?.symbol}
                 </p>
@@ -186,7 +186,7 @@ if (isLoading) {
               <div className={styles.tokenItem}>
                 <h3 className={styles.tokenLabel}>Current Balance</h3>
                 <p className={styles.tokenValue}>
-                  <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
+                  <b>{tokenBalance?.displayValue !== undefined ? parseFloat(tokenBalance.displayValue).toFixed(2) : ""}</b> {tokenBalance?.symbol}
                 </p>
               </div>
             </div>
