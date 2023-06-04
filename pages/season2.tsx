@@ -113,16 +113,12 @@ if (isLoading) {
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        {/*
+        
         <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>4 Matic</b> and goes until Juni 30th.
          <br /><br /> 
          <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>8 Matic</b> and runs until July 31th.
         </p>
-        */}
-        <b> Whitelist Mint</b> is open and goes until Juni 4th 6:30pm UTC.
-         <br /><br /> 
-         Unreveal Mint for <b>4 Matic</b> Launches in <b>2 days</b>
-        </p>
+        
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
   
