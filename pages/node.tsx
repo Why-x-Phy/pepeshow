@@ -115,9 +115,9 @@ if (isLoading) {
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        <b>GENESIS EDITION NFT</b> costs <b>25 Matic</b>.
+        <b>GENESIS EDITION NFT</b> costs <b>25 Matic</b> and only <b>2 per Wallet</b> in a Season.
          <br /><br /> 
-         <b>And activate your node</b> to generate <b>Unreveal Token</b> with it.
+         <b>Activate your node</b> to generate <b>Unreveal Token</b> with it.
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
