@@ -115,6 +115,8 @@ if (isLoading) {
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
+          <b>Whitelist Mint is Open. Public Mint starts on June 10th at 6pm UTC</b>
+          <br /><br /> 
         <b>GENESIS EDITION NFT</b> costs <b>25 Matic</b> and only <b>2 per Wallet</b> in a Season.
          <br /><br /> 
          <b>Activate your node</b> to generate <b>Unreveal Token</b> with it.
