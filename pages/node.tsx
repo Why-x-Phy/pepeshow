@@ -138,6 +138,9 @@ if (isLoading) {
                       <button
                         className={`${styles.quantityControlButton}`}
                         onClick={() => setQuantity(quantity + 1)}
+                        disabled={quantity >= 2}
+
+                        
                         
                       >
                         +
