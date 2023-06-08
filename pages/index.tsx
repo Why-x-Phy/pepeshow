@@ -15,10 +15,10 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/`)}
+          onClick={() => router.push(`/node`)}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/coming.webp" alt="coming" width={64} height={64} />
+          <Image src="/icons/edition.webp" alt="edition" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>Unreveal Node</h2>
           <p className={styles.selectBoxDescription}>
           Get a rare <b>Genesis Edition NFT</b> and operate a <b>Unreveal Node</b>{" "}
