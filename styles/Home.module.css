@@ -144,7 +144,7 @@
 }
 
 .nftBoxNode:hover {
-  background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(56, 50, 54, 0.3) 71%);
+  background: linear-gradient(158deg, rgba(212,175,55,0.3) 27%, rgba(56, 50, 54, 0.3) 71%);
   transition: 0.7s;
 }
 
