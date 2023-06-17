@@ -18,6 +18,8 @@ import { BigNumber, ethers } from "ethers";
 import NFTCard from "../components/NFTCardSeason1";
 import {
   nftDropSeason1,
+  nftDropSeason2,
+  nftDropSeason3,
   stakingSeason1,
   tokenContractAddress,
 } from "../consts/contractAddresses";
@@ -26,6 +28,8 @@ import {
 const Home: NextPage = () => {
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
+  const [quantity1, setQuantity1] = useState(1);
+  const [quantity2, setQuantity2] = useState(1);
 
     const address = useAddress();
     const { contract: nftDropContract } = useContract(
@@ -89,40 +93,27 @@ if (isLoading) {
 
 
     return (
-      <div className={styles.container}>
-          <div
-          className={styles.optionSelectBack}
-          role="button"
-          onClick={() => router.push(`/`)}
-        >
-          {/* Mint a new NFT */}
-          <h2 className={styles.selectBoxTitleBack}>Back to Dashboard</h2>
-        </div>
-        <p className={styles.minting}>
+      
+       <div className={styles.container}>
 
+<ConnectWallet btnTitle="Connect Wallet" className={styles.wallet} />
 
-
+        <div className={styles.connect}>
+        
+        <div
+        className={styles.minting}>
         <br /><br />
-        
-        <ConnectWallet btnTitle="Connect Wallet" className={styles.wallet} />
-       
-        
-        
-        <h1 className={styles.h1}>Angry Animals Season 1 is completed</h1>
+        <h1 className={styles.h1}>PEPESHOW</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        <b>Unreveal and Reveal Mint is completed</b>
+        <b>Bronce Wagmi Girl</b>
          <br /><br /> 
-         <b>Season 2 Mint is opened</b>
+         <b>0.1 ETH</b>
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
-  
-  
-        
-  
-        {/*<div className={styles.quantityContainer}>
+        <div className={styles.quantityContainer}>
                       <button
                         className={`${styles.quantityControlButton}`}
                         onClick={() => setQuantity(quantity - 1)}
@@ -141,10 +132,7 @@ if (isLoading) {
                         +
                       </button>
                     </div> 
-  
-                    
-  
-        <Web3Button
+         <Web3Button
           className={styles.wallet}
           contractAddress={nftDropSeason1}
           action={(contract) => contract.erc721.claim(quantity)}
@@ -156,11 +144,112 @@ if (isLoading) {
             
           }}
         >
-          Mint An NFT
-        </Web3Button> */}
+          Mint An Wagmi
+        </Web3Button> 
         <br /><br /> 
-        </p>
+        </div>
 
+        <div
+        className={styles.minting}>
+        <br /><br />
+        <h1 className={styles.h1}>PEPESHOW</h1>
+  
+        <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+  
+        <p className={styles.explain}>
+        <b>Silber Wagmi Girl</b>
+         <br /><br /> 
+         <b>0.2 ETH</b>
+        </p>
+        <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+        <div className={styles.quantityContainer}>
+                      <button
+                        className={`${styles.quantityControlButton}`}
+                        onClick={() => setQuantity1(quantity1 - 1)}
+                        disabled={quantity1 <= 1}
+                      >
+                        -
+                      </button>
+  
+                      <h4>{quantity1}</h4>
+  
+                      <button
+                        className={`${styles.quantityControlButton}`}
+                        onClick={() => setQuantity1(quantity1 + 1)}
+                        
+                      >
+                        +
+                      </button>
+                    </div> 
+  
+        <Web3Button
+          className={styles.wallet}
+          contractAddress={nftDropSeason2}
+          action={(contract) => contract.erc721.claim(quantity1)}
+          onSuccess={() => {
+            setQuantity1(1);
+            
+          }}
+          onError={(error) => {
+            
+          }}
+        >
+          Mint An Wagmi
+        </Web3Button> 
+        <br /><br /> 
+        </div>
+
+        <div
+        className={styles.minting}>
+        <br /><br />
+        <h1 className={styles.h1}>PEPESHOW</h1>
+  
+        <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+  
+        <p className={styles.explain}>
+        <b>Gold Wagmi Girl</b>
+         <br /><br /> 
+         <b>0.5 ETH</b>
+        </p>
+        <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+        <div className={styles.quantityContainer}>
+                      <button
+                        className={`${styles.quantityControlButton}`}
+                        onClick={() => setQuantity2(quantity2 - 1)}
+                        disabled={quantity2 <= 1}
+                      >
+                        -
+                      </button>
+  
+                      <h4>{quantity2}</h4>
+  
+                      <button
+                        className={`${styles.quantityControlButton}`}
+                        onClick={() => setQuantity2(quantity2 + 1)}
+                        
+                      >
+                        +
+                      </button>
+                    </div> 
+          <Web3Button
+          className={styles.wallet}
+          contractAddress={nftDropSeason3}
+          action={(contract) => contract.erc721.claim(quantity2)}
+          onSuccess={() => {
+            setQuantity2(1);
+            
+          }}
+          onError={(error) => {
+            
+          }}
+        >
+          Mint An Wagmi
+        </Web3Button> 
+        <br /><br /> 
+        </div>
+
+
+        {/*
         <p className={styles.staking}> 
         <h1 className={styles.h1}>Stake Your Season 1 NFTs</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
@@ -280,7 +369,8 @@ if (isLoading) {
         </>
        
 
-          </p>
+          </p> */}
+          </div>
       </div>
     );
 

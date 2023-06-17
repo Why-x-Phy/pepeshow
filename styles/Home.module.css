@@ -10,6 +10,18 @@
   padding: 0 24px;
 }
 
+.nftBoxGrid {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
 .loading {
   margin-top: 150px;
   display: flex;
@@ -28,13 +40,46 @@
 
 .minting {
   background: rgba(217, 183, 245, 0.1);
-  width: 100%;
+  width: 25%;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+  box-shadow: 0 0 18px 0 #82919b; 
+}
+
+.connect {
+  background: rgba(217, 183, 245, 0);
+  width: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+ 
+}
+
+.optionSelectBox {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 48%;
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
   margin-bottom: 50px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b; 
@@ -102,20 +147,6 @@
   opacity: 0.25;
 }
 
-
-
-.nftBoxGrid {
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  justify-content: center;
-  gap: 1%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-}
 
 .nftBox {
   border-radius: 16px;
@@ -233,24 +264,6 @@
   transform: scale(1.05);
 }
 
-
-.optionSelectBox {
-  border-radius: 16px;
-  border: 1px solid #ccc;
-  width: 48%;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 12px;
-  padding-right: 12px;
-  cursor: pointer;
-  margin-bottom: 50px;
-  border: 1px solid rgba(46, 44, 44, 0.4);
-  box-shadow: 0 0 18px 0 #82919b; 
-}
 
 .optionSelectBox:hover {
   background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
